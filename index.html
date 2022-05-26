@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fran Terrón Coches Clásicos</title>
+    <link rel="stylesheet" href="./styless/styles.css">
+    <link rel="stylesheet" href="./styless/normalize.css">
+    <script src="https://kit.fontawesome.com/42ad756bbf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Grid Layout-->
+    <div class="grid_container">
+        <div class="grid_item grid_header">
+            <header>
+                <h1 class="logo">CLASSICS</h1>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#Noticias">Noticias</a></li>
+                        <li><a href="#Galeria">Galeria</a></li>
+                        <li><a href="#Formulario">Contacto</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#Mapa">Mapa</a>
+                <p class="menu cta">Menú</p>
+            </header>
+            <div class="overlay">
+                <a class="close">&times;</a>
+                <div class="overlay__content">
+                    <a href="#Noticias">Noticias</a>
+                    <a href="#Galeria">Galeria</a>
+                    <a href="#Mapa">Ubicación</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid_item grid_main">
+            <section class="noticias">
+                <h2 id="Noticias">NOTÍCIAS</h2>
+                <div class="container_texto">
+                    <h3>BMW iX3 2022</h3>
+                    <p>El BMW iX3 2022 es, en realidad, un restyling del iX3 con todas las novedades que han llegado a
+                        la gama 2022 del BMW X3. Es decir, que en esta nueva iteración del modelo eléctrico se han
+                        introducido novedades estéticas relevantes, pero además se ha actualizado y mejorado su
+                        equipamiento. Entre otras cosas, viene de serie con el paquete M Sport que le confiere un 'look'
+                        más deportivo sin tener que pedirlo expresamente. <br><br>
+                        Se han renovado los faros, que tienen un diseño más afilado y pueden contar con tecnología
+                        láser, se ha actualizado la parrilla delantera y se han cambiado tanto el paragolpes delantero
+                        como el trasero. Aquí, en la zaga, también los pilotos tienen un nuevo diseño y cuentan con
+                        tecnología LED. Los decorativos azules son opcionales, pero el paquete M Sport viene incluido de
+                        serie.
+                    </p>
+                    <a href="https://cutt.ly/CSygNO2" target="_BLANK"><img src="./img/noticia1.jpg" alt="BMW iX3"></a>
+                </div>
+            </section>
+            <h2 id="Galeria">GALERÍA</h2>
+            <section class="galeria">
+                <ul>
+                    <li><img src="./img/slider1.jpg" alt="#"></li>
+                    <li><img src="./img/slider2.jpg" alt="#"></li>
+                    <li><img src="./img/slider3.jpg" alt="#"></li>
+                    <li><img src="./img/slider4.jpg" alt="#"></li>
+                </ul>
+            </section>
+            <h2 id="Formulario">CONTACTO</h2>
+            <section class="formulario">
+                <h4>Formulario de Contacto</h4>
+                <form id="formulario">
+                    <input class="opciones" type="text" placeholder="Introduzca su nombre" id="nombre" name="nombre"
+                        required maxlength="10">
+                    <input class="opciones" type="text" placeholder="Introduzca sus apellidos" id="apellidos"
+                        name="Apellidos" required maxlength="40">
+                    <input class="opciones" type="date" name="date" id="fecha">
+                    <input class="opciones" type="text" placeholder="ejemploemail@gmail.com" id="email" name="Email"
+                        required>
+                    <input class="opciones" type="password" placeholder="Introduzca su Contraseña" id="contrasenia"
+                        name="correo">
+                    <input class="opciones" type="text" placeholder="Introduzca su DNI" id="dni" name="DNI" size="10"
+                        required maxlength="9">
+                    <input class="opciones" type="tel" placeholder="+34 XXX-XX-XX-XX" id="telefono" name="telefono"
+                        maxlength="11">
+                        <h4>Titulación:</h4>
+                    <select class="opciones" name="Titulacion" id="titulacion">
+                        <option value="1">Selecciona una:</option>
+                        <option value="2">Bachillerato</option>
+                        <option value="3">E.S.O</option>
+                        <option value="4">Grado superior</option>
+                        <option value="5">Grado medio</option>
+                        <option value="6">Carrera</option>
+                    </select>
+                    <h4>Edad</h4>
+                    <input class="opciones" type="number" id="edad" min="1" max="100" required>
+                    <div class="submit">
+                        <h1 id="bienvenido_usuario" class="bienvenida"></h1>
+                        <input class="botones" type="submit" value="Enviar">
+                        <input class="botones" type="reset" value="Borrar">
+                    </div>
+                </form>
+            </section>
+            <h2 id="Mapa" class="mapa_texto">DONDE ESTAMOS</h2>
+            <section class="mapa_contenedor">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.391844900615!2d-5.881169735287941!3d38.960719750815365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd145b1f41d61653%3A0xd4d56e6aba5967e8!2sBMW%20Mandel%20Motor%20-%20Don%20Benito!5e0!3m2!1ses!2ses!4v1647428987515!5m2!1ses!2ses"
+                    class="mapa_frame" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+        <div class="grid_item grid_aside">
+            <section class="noticias">
+                <div class="noticia_container">
+                    <img src="./img/aside1.jpg" alt="Porsche E-Hybrid" class="foto-noticia">
+                    <p class="noticia-1"><b>Nuevo Porsche Panamera E-Hybrid</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside2.jpg" alt="Veloser" class="foto-noticia">
+                    <p class="noticia-1"><b>Mapa de radares Veloser</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside4.jpg" alt="BMW" class="foto-noticia">
+                    <p class="noticia-1"><b>Top 5 Classics de los 90's</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside5.jpg" alt="Coches mas vendidos" class="foto-noticia">
+                    <p class="noticia-1"><b>Coches más vendidos del 2022</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside6.jpg" alt="Mercedes" class="foto-noticia">
+                    <p class="noticia-1"><b>Nuevos Mercedes 2022</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside7.jpg" alt="Abarth" class="foto-noticia">
+                    <p class="noticia-1"><b>Abarth 595 Pista</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside8.jpg" alt="Rolls Royce" class="foto-noticia">
+                    <p class="noticia-1"><b>Rolls Royce Phantom 2022</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside9.jpg" alt="Motores" class="foto-noticia">
+                    <p class="noticia-1"><b>Motores //M</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside10.jpg" alt="Lubricantes" class="foto-noticia">
+                    <p class="noticia-1"><b>Nueva Gama Lubricantes Casrtol</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside11.jpg" alt="Alpina" class="foto-noticia">
+                    <p class="noticia-1"><b>BMW E24 Alpina</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside12.jpg" alt="E30" class="foto-noticia">
+                    <p class="noticia-1"><b>Ficha Técnica BMW M3 E30</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside5.jpg" alt="Coches" class="foto-noticia">
+                    <p class="noticia-1"><b>Coches más vendidos del 2022</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside14.jpg" alt="Teile" class="foto-noticia">
+                    <p class="noticia-1"><b>Original BMW Teile</b></p>
+                </div>
+                <div class="noticia_container">
+                    <img src="./img/aside13.jpg" alt="E10 Cabriolet" class="foto-noticia">
+                    <p class="noticia-1"><b>A la venta espectacular E10 Cabriolet</b></p>
+                </div>
+            </section>
+        </div>
+        <div class="grid_item grid_footer">
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer__col">
+                            <h4>Empresa</h4>
+                            <ul>
+                                <li><a href="#">Sobre nosotros</a></li>
+                                <li><a href="#">Nuestros servicios</a></li>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Programa de afiliación</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h4>Ayuda</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Envíos</a></li>
+                                <li><a href="#">Devoluciones</a></li>
+                                <li><a href="#">Estados del pedido</a></li>
+                                <li><a href="#">Opciones de pagos</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h4>Tienda</h4>
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Publicidad</a></li>
+                                <li><a href="#">Articulos</a></li>
+                                <li><a href="#">Horario</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h4>Siguenos</h4>
+                            <div class="social-links">
+                                <a href="https://facebook.com/" target="_BLANK"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/" target="_BLANK"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://instagram.com/" target="_BLANK"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://linkedin.com/" target="_BLANK"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/mobile.js"></script>
+</body>
+</html>
